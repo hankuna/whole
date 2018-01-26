@@ -1,0 +1,251 @@
+*{
+	box-sizing:border-box;
+	font-size: .16rem;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #eeeeee;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+}
+.header{
+	width: 100%;
+	height: .44rem;
+	text-align: center;
+	line-height: .44rem;
+	position: relative;
+	color: #35322d;
+	background: #fff;
+	a{
+		position: absolute;
+		left: .1rem;
+		font-size: .12rem;
+		color:#45be9f;
+		i{
+			color:#45be9f;
+			font-size: .14rem;
+		}
+	}
+}
+
+.con{
+	width: 100%;
+	-webkit-flex:1;
+	background: #fff;
+	overflow: auto;
+	.con_banner{
+		width: 100%;
+		height: 1.65rem;
+		background: #45be9f;
+		position: relative;
+		.con_img{
+			width: 1.15rem;
+			height: 1.15rem;
+			background: #fff;
+			border-radius: 50%;
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
+	}
+	.con_imgs{
+			width: 100%;
+			height: 1.9rem;
+			background: #45be9f;
+			position: relative;
+			.con_img_tip{
+				width: 1.15rem;
+				height: 1.15rem;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				top:.2rem;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+				img{
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+				}
+			}
+			.con_personage{
+				width: 100%;
+				position: absolute;
+				bottom: .15rem;
+				color: #fff;
+				text-align: center;
+				p{
+					font-size: .12rem;
+					line-height: .16rem;
+					span{
+						font-size: .12rem;
+					}
+				}
+			}
+			.like{
+				position: absolute;
+				top:.2rem;
+				left: .1rem;
+				color: #fff;
+				font-size: .12rem;
+				i{
+					font-size: .14rem;
+				}
+			}
+			.select{
+				position: absolute;
+				top:.2rem;
+				right: .1rem;
+				color: #fff;
+				i{
+					font-size: .14rem;
+				}
+			}
+		}
+	.con_imports{
+		width: 100%;
+		.con_import{
+			width: 100%;
+			height: .62rem;
+			input{
+				width: 100%;
+				height: 100%;
+				border:none;
+				border-bottom: 1px solid #dcdcdc;
+				padding-left: .6rem;
+				color: #777;
+				font-size: .14rem;
+			}
+			.phone{
+				background: url(../images/1_03.png) no-repeat;
+			}
+			.pwd{
+				background: url(../images/1_06.png) no-repeat;
+			}
+		}
+	}
+	.con_profession{
+		width: 100%;
+		height: 1.25rem;
+		display: -webkit-flex;
+		.profession{
+			-webkit-flex:1;
+			text-align: center;
+			span{
+				display: block;
+			}
+			img{
+				margin: .1rem 0;
+			}
+		}
+	}
+	.con_title{
+		width: 100%;
+		height: .34rem;
+		line-height: .34rem;
+		background:#eeeeee;
+		font-weight: bold;
+		p{
+			padding-left:.1rem;
+			font-size: .14rem;
+			color: #000105;
+		}
+	}
+	.con_records{
+		width: 100%;
+		.con_record{
+			width: 100%;
+			li{
+				width: 100%;
+				height: .52rem;
+				color: #616c68;
+				font-size: .12rem;
+				padding: 0 .1rem;
+				border-bottom: 1px solid #ccc;
+				line-height: .52rem;
+				span{
+					display: inline-block;
+					width:.1rem;
+					height: .1rem;
+					border-radius: 50%;
+					float: right;
+					margin-top: .22rem
+				}
+				span.tip{
+					background: red;
+				}
+				a{
+					float: right;
+				}
+			}
+		}
+	}
+}
+.con_btn{
+	width: 100%;
+	height: .9rem;
+	padding:.2rem .15rem;
+	.log_in{
+		width: 100%;
+		height: 100%;
+		border:none;
+		background:#36bc9b;
+		color: #fff;
+		font-size: .14rem;
+		margin-bottom: 1.3rem;
+	}
+	.follow_up{
+		width: 100%;
+		text-align: center;
+		a{
+			display: inline-block;
+			color: #080000;
+			font-size: .13rem;
+			position: relative;
+			margin:0 .05rem;
+		}
+		a:first-child:after{
+			content: '';
+			width: 1px;
+			height: .14rem;
+			background: #080000;
+			position: absolute;
+			margin-left: .05rem;
+			top:.02rem;
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: .44rem;
+	display: -webkit-flex;
+	line-height: .44rem;
+	background: #fff;
+	border-top: 1px solid #ccc;
+	.footer_skip{
+		-webkit-flex:1;
+		text-align: center;
+		font-size: .12rem;
+		color: #39bc9c;
+		span{
+			color: #39bc9c;
+			font-size: .12rem;
+		}
+	}
+	.footer_skip.bg{
+		color: #fff;
+		background:#39bc9c;
+		span{
+			color: #fff;
+		}
+	}
+}
